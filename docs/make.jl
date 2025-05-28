@@ -1,5 +1,6 @@
 using QECC
 using Documenter
+using DocumenterCitations
 
 DocMeta.setdocmeta!(QECC, :DocTestSetup, :(using QECC); recursive=true)
 

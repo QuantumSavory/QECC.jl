@@ -1,5 +1,5 @@
 using Test
-using QECCodes
+using QECC
 
 @testset "Toric" begin
     c = Toric(2,2)

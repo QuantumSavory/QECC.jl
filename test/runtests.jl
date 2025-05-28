@@ -1,4 +1,4 @@
-using QECCodes
+using QECC
 using Test
 
 @testset "fivequbit" begin

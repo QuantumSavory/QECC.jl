@@ -1,5 +1,5 @@
 using Test
-using QECCodes
+using QECC
 
 @testset "Cleve8" begin
     c = Cleve8()

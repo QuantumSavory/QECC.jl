@@ -1,5 +1,5 @@
 using Test
-using QECCodes
+using QECC
 
 @testset "Shor9" begin
     c = Shor9()

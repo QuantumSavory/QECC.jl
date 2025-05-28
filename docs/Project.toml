@@ -1,3 +1,3 @@
 [deps]
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
-QECCodes = "493859b3-0a9b-4ce5-80ab-0e90fdaeac4d"
+QECC = "493859b3-0a9b-4ce5-80ab-0e90fdaeac4d"

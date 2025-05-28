@@ -1,14 +1,14 @@
 ```@meta
-CurrentModule = QECCodes
+CurrentModule = QECC
 ```
 
-# QECCodes
+# QECC
 
-Documentation for [QECCodes](https://github.com/nzy1997/QECCodes.jl).
+Documentation for [QECC](https://github.com/nzy1997/QECC.jl).
 
 ```@index
 ```
 
 ```@autodocs
-Modules = [QECCodes]
+Modules = [QECC]
 ```

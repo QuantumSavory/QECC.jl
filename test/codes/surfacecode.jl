@@ -1,5 +1,5 @@
 using Test
-using QECCodes
+using QECC
 
 @testset "Surface" begin
     c = Surface(2,2)

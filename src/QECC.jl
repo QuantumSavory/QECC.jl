@@ -1,4 +1,4 @@
-module QECCodes
+module QECC
 
 using SparseArrays
 using LinearAlgebra

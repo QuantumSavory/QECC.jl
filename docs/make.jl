@@ -1,14 +1,14 @@
-using QECCodes
+using QECC
 using Documenter
 
-DocMeta.setdocmeta!(QECCodes, :DocTestSetup, :(using QECCodes); recursive=true)
+DocMeta.setdocmeta!(QECC, :DocTestSetup, :(using QECC); recursive=true)
 
 makedocs(;
-    modules=[QECCodes],
+    modules=[QECC],
     authors="nzy1997",
-    sitename="QECCodes.jl",
+    sitename="QECC.jl",
     format=Documenter.HTML(;
-        canonical="https://nzy1997.github.io/QECCodes.jl",
+        canonical="https://nzy1997.github.io/QECC.jl",
         edit_link="main",
         assets=String[],
     ),
@@ -18,6 +18,6 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/nzy1997/QECCodes.jl",
+    repo="github.com/nzy1997/QECC.jl",
     devbranch="main",
 )

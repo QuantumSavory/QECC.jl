@@ -1,5 +1,5 @@
 using Test
-using QECCodes
+using QECC
 
 @testset "RepCode" begin
     c = RepCode(5)

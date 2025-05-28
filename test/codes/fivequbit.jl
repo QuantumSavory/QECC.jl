@@ -1,5 +1,5 @@
 using Test
-using QECCodes
+using QECC
 
 @testset "Perfect5" begin
     p5 = Perfect5()

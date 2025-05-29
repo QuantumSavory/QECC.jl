@@ -20,7 +20,7 @@ Bitflip3 is a quantum error correction code that corrects single-qubit bit-flip 
 """
 struct Bitflip3 <: AbstractQECC end
 
-parity_matrix(c::Bitflip3) = hcat(zeros(Bool,3,3), parity_matrix(RepCode(3)))
+parity_matrix(c::Bitflip3) = hcat(zeros(Bool,2,3), parity_matrix(RepCode(3))[1:2,:])
 
 """Three-qubit phase-flip code.
 
@@ -28,4 +28,4 @@ Phaseflip3 is a quantum error correction code that corrects single-qubit phase-f
 """
 struct Phaseflip3 <: AbstractQECC end
 
-parity_matrix(c::Phaseflip3) = hcat(parity_matrix(RepCode(3)), zeros(Bool,3,3))
+parity_matrix(c::Phaseflip3) = hcat(parity_matrix(RepCode(3))[1:2,:], zeros(Bool,2,3))

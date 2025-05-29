@@ -28,3 +28,7 @@ end
 @testset "clevecode" begin
     include("codes/clevecode.jl")
 end
+
+@testset "css" begin
+    include("codes/css.jl")
+end

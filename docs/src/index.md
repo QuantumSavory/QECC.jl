@@ -22,4 +22,6 @@ A repository for *quantum error correction* (QEC) codes.
 ## Classical Code list
 | Code name    | Struct |
 | -------- | ------- |
-| Repetition Code| [`RepCode`](@ref) |
+| Repetition Code| [`RepCode`](@ref)|
+| Reed-Muller Code| [`ReedMuller`](@ref)|
+| Recursive Reed-Muller Code| [`RecursiveReedMuller`](@ref)|

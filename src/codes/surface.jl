@@ -1,5 +1,8 @@
-"""The planar surface code refers to the code [kitaev2003fault](@cite) in a 2D lattice with open boundaries.
+"""
+    Surface <: AbstractCSSCode
+    Surface(dx, dz)
 
+The planar surface code refers to the code [kitaev2003fault](@cite) in a 2D lattice with open boundaries.
 Illustration of a 3×2 surface code, where qubits are located on the edges:
 
 ```
@@ -13,6 +16,10 @@ Illustration of a 3×2 surface code, where qubits are located on the edges:
 The surface code has open boundary conditions, unlike the toric code. To this end, we remove qubits (denoted by "o") and parity checks on the right and bottom sides.
 
 More information can be seen in [fowler2012surface](@cite).
+
+### Fields
+- `dx`: The number of qubits in the x direction.
+- `dz`: The number of qubits in the z direction.
 """
 struct Surface <: AbstractCSSCode
     dx::Int

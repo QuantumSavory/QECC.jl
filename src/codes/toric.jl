@@ -1,7 +1,9 @@
-"""The Toric code [kitaev2003fault](@cite).
+"""
+    Toric <: AbstractCSSCode
+    Toric(dx, dz)
 
+The Toric code [kitaev2003fault](@cite).
 Illustration of a 2x2 toric code, where qubits are located on the edges:
-
 ```
 |--1-(Z)-2--|
 | (X) 5     6
@@ -11,6 +13,10 @@ Illustration of a 2x2 toric code, where qubits are located on the edges:
 ```
 
 It is important to note that the toric code has periodic boundary conditions, which means that the top and bottom sides are essentially glued together, as are the left and right sides.
+
+### Fields
+- `dx`: The number of qubits in the x direction.
+- `dz`: The number of qubits in the z direction.
 """
 struct Toric <: AbstractCSSCode
     dx::Int

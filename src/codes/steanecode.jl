@@ -1,6 +1,10 @@
 # TODO Steane5 qubit code
 
-"""Steane code [steane1996error](@cite)."""
+"""
+    Steane7 <: AbstractCSSCode
+
+Steane code [steane1996error](@cite).
+"""
 struct Steane7 <: AbstractCSSCode end
 
 _steane_mat() = Bool[0 0 0 1 1 1 1;

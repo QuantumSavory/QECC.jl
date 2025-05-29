@@ -1,6 +1,11 @@
-"""Repetition code.
+"""
+    RepCode <: AbstractCECC
+    RepCode(n)
 
 Repetition code is a classical error correction code that repeats the same bit `n` times.
+
+### Fields
+- `n`: The number of times to repeat the bit.
 """
 struct RepCode <: AbstractCECC
     n::Int
@@ -14,17 +19,19 @@ function parity_matrix(c::RepCode)
     sparse(I,J,V,n,n)
 end
 
-"""Three-qubit bit-flip code.
+"""
+    Bitflip3 <: AbstractQECC
 
-Bitflip3 is a quantum error correction code that corrects single-qubit bit-flip error and does not detect any phase-flip errors.
+Bitflip3 is a three-qubit bit-flip code that corrects single-qubit bit-flip error and does not detect any phase-flip errors.
 """
 struct Bitflip3 <: AbstractQECC end
 
 parity_matrix(c::Bitflip3) = hcat(zeros(Bool,2,3), parity_matrix(RepCode(3))[1:2,:])
 
-"""Three-qubit phase-flip code.
+"""
+    Phaseflip3 <: AbstractQECC
 
-Phaseflip3 is a quantum error correction code that corrects single-qubit phase-flip error and does not detect any bit-flip errors.
+Phaseflip3 is a three-qubit phase-flip code that corrects single-qubit phase-flip error and does not detect any bit-flip errors.
 """
 struct Phaseflip3 <: AbstractQECC end
 

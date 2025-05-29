@@ -1,6 +1,7 @@
-"""Perfect five-qubit code [lafiamme1996perfect](@cite).
+"""
+    Perfect5 <: AbstractQECC
 
-Perfect5 code is the smallest qubit stabilizer code to correct a single-qubit error.
+Perfect5 code [lafiamme1996perfect](@cite) is the smallest qubit stabilizer code to correct a single-qubit error.
 """
 struct Perfect5 <: AbstractQECC end
 

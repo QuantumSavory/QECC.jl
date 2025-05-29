@@ -4,7 +4,7 @@ using SparseArrays
 using LinearAlgebra
 
 # interfaces
-export distance, parity_matrix, code_n, code_s, parity_matrix_x, parity_matrix_z
+export distance, parity_matrix, code_n, code_s, code_k, parity_matrix_x, parity_matrix_z
 
 # QEC Codes
 export Perfect5,Cleve8

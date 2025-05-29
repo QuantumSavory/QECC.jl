@@ -1,8 +1,12 @@
 """
+    CSS <: AbstractCSSCode
     CSS(Hx, Hz)
 
-An arbitrary CSS error correcting code defined by its X and Z checks.
-`Hx` and `Hz` are the parity check matrices of the X and Z stabilizers, respectively.
+An arbitrary CSS error correction code defined by its X and Z checks.
+
+### Fields
+- `Hx`: The parity check matrix of the X stabilizers.
+- `Hz`: The parity check matrix of the Z stabilizers.
 """
 struct CSS <: AbstractCSSCode
     Hx::Matrix{Bool}

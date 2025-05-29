@@ -1,6 +1,7 @@
-"""Shor9 code [shor1995scheme](@cite).
+"""
+    Shor9 <: AbstractCSSCode
 
-Nine-qubit CSS code that is the first quantum error-correcting code.
+Shor9 code [shor1995scheme](@cite)is a nine-qubit CSS code that is the first quantum error-correcting code.
 """
 struct Shor9 <: AbstractCSSCode end
 

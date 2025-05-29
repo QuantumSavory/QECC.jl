@@ -53,6 +53,13 @@ The number of logical qubits in a error correction code.
 function code_k end
 
 """
+    rate(c::AbstractECC)
+
+The rate of a error correction code.
+"""
+function rate end
+
+"""
     distance(c::AbstractECC)
 
 The code distance of a error correction code.

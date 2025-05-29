@@ -36,3 +36,7 @@ end
 @testset "reedmuller" begin
     include("codes/classical/reedmuller.jl")
 end
+
+@testset "quantumreedmuller" begin
+    include("codes/quantumreedmuller.jl")
+end

@@ -4,13 +4,13 @@ using SparseArrays
 using LinearAlgebra
 
 # interfaces
-export distance, parity_matrix, code_n, code_s
+export distance, parity_matrix, code_n, code_s, parity_matrix_x, parity_matrix_z
 
 # QEC Codes
 export Perfect5,Cleve8
 
 # CSS Codes
-export Toric,Bitflip3,Phaseflip3,Shor9,Steane7,Surface
+export Toric,Bitflip3,Phaseflip3,Shor9,Steane7,Surface,CSS
 
 # Classical Codes
 export RepCode

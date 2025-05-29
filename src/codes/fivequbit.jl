@@ -1,3 +1,7 @@
+"""Perfect five-qubit code [lafiamme1996perfect](@cite).
+
+Perfect5 code is the smallest qubit stabilizer code to correct a single-qubit error.
+"""
 struct Perfect5 <: AbstractQECC end
 
 parity_matrix(c::Perfect5) = Bool[1 0 0 1 0 0 1 1 0 0;

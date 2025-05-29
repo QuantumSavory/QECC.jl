@@ -1,10 +1,19 @@
 using QECC
 using Documenter
 using DocumenterCitations
+using Literate
 
 DocMeta.setdocmeta!(QECC, :DocTestSetup, :(using QECC); recursive=true)
 
 bib = CitationBibliography(joinpath(@__DIR__,"src/references.bib"),style=:authoryear)
+
+for each in readdir(pkgdir(QECC, "examples"))
+    input_file = pkgdir(QECC, "examples", each)
+    endswith(input_file, ".jl") || continue
+    @info "building" input_file
+    output_dir = pkgdir(QECC, "docs", "src", "generated")
+    Literate.markdown(input_file, output_dir; name=each[1:end-3], execute=false)
+end
 
 makedocs(
     plugins = [bib],
@@ -18,6 +27,7 @@ makedocs(
     ),
     pages=[
         "Home" => "index.md",
+        "Interface" => "generated/interface.md",
         "References" => "references.md",
         "Manual" => "man.md",
     ],

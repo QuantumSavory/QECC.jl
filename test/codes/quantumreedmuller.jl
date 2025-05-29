@@ -49,3 +49,8 @@ end
     0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  1  1  1]
     @test parity_matrix(QuantumReedMuller(4)) == pm
 end
+
+@testset "Test invalid parameters" begin
+    @test_throws DomainError QuantumReedMuller(-1)
+    @test_throws DomainError QuantumReedMuller(2)
+end

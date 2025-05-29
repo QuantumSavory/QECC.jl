@@ -8,10 +8,10 @@ using Combinatorics
 export distance, parity_matrix, code_n, code_s, code_k, parity_matrix_x, parity_matrix_z, rate
 
 # QEC Codes
-export Perfect5,Cleve8
+export Perfect5, Cleve8
 
 # CSS Codes
-export Toric,Bitflip3,Phaseflip3,Shor9,Steane7,Surface,CSS
+export Toric, Bitflip3, Phaseflip3, Shor9, Steane7, Surface, CSS
 
 # Classical Codes
 export RepCode, ReedMuller, RecursiveReedMuller

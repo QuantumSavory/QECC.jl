@@ -46,7 +46,7 @@ function generator(c::ReedMuller)
     return G 
 end
 
-function parity_checks(c::ReedMuller)
+function parity_matrix(c::ReedMuller)
     H = generator(ReedMuller(c.m - c.r - 1, c.m))
     return H
 end

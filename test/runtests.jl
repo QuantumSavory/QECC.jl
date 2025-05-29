@@ -32,3 +32,7 @@ end
 @testset "css" begin
     include("codes/css.jl")
 end
+
+@testset "reedmuller" begin
+    include("codes/classical/reedmuller.jl")
+end

@@ -50,7 +50,7 @@ function generator(c::RecursiveReedMuller)
     return _recursiveReedMuller(c.r, c.m)
 end
 
-function parity_checks(c::RecursiveReedMuller)
+function parity_matrix(c::RecursiveReedMuller)
     H = generator(RecursiveReedMuller(c.m - c.r - 1, c.m))
     return H
 end

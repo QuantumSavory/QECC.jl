@@ -18,8 +18,11 @@ A repository for *quantum error correction* (QEC) codes.
 | Toric code | [`Toric`](@ref) |
 | Surface code | [`Surface`](@ref) |
 | General CSS code | [`CSS`](@ref) |
+| Quantum Reed-Muller Code | [`QuantumReedMuller`](@ref) |
 
 ## Classical Code list
 | Code name    | Struct |
 | -------- | ------- |
-| Repetition Code| [`RepCode`](@ref) |
+| Repetition Code| [`RepCode`](@ref)|
+| Reed-Muller Code| [`ReedMuller`](@ref)|
+| Recursive Reed-Muller Code| [`RecursiveReedMuller`](@ref)|

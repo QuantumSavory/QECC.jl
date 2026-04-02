@@ -88,5 +88,3 @@ Parity check boolean matrix of a code (only the Z entries in the tableau, i.e. t
 Only CSS codes have this method.
 """
 function parity_matrix_z end
-
-parity_matrix(c::AbstractCSSCode) = parity_matrix(CSS(parity_matrix_x(c), parity_matrix_z(c)))

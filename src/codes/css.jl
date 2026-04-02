@@ -26,3 +26,6 @@ end
 
 parity_matrix_x(c::CSS) = c.Hx
 parity_matrix_z(c::CSS) = c.Hz
+
+# Parity matrix for general CSS codes
+parity_matrix(c::AbstractCSSCode) = parity_matrix(CSS(parity_matrix_x(c), parity_matrix_z(c)))
